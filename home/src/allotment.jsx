@@ -21,7 +21,6 @@ function AllotmentPage() {
 
   return (
     <div className="bg-black text-gray-400 min-h-screen p-6">
-      <Navbar />
       <div className="container mx-auto py-10">
         <h1 className="text-3xl font-semibold text-center mb-8">Parking Allotment</h1>
         
@@ -48,18 +47,6 @@ function AllotmentPage() {
         </div>
       </div>
     </div>
-  );
-}
-
-function Navbar() {
-  return (
-    <nav className="bg-gray-800 fixed w-full py-4 px-6 shadow-md z-50">
-      <ul className="flex justify-center space-x-8">
-        <li className="hover:text-white cursor-pointer">Home</li>
-        <li className="hover:text-white cursor-pointer">Allotments</li>
-        <li className="hover:text-white cursor-pointer">Contact Us</li>
-      </ul>
-    </nav>
   );
 }
 

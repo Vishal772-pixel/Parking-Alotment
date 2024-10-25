@@ -2,29 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="bg-black text-gray-400 min-h-screen">
-      <Navbar />
       <main className="container mx-auto py-10 px-4">
         <VehicleContainers />
         <ParkingCarousel />
         <ExcitingSection />
       </main>
     </div>
-  );
-}
-
-function Navbar() {
-  return (
-    <nav className="bg-gray-800 fixed w-full py-4 px-6 shadow-md z-50">
-      <ul className="flex justify-center space-x-8">
-        <li className="hover:text-white cursor-pointer">Home</li>
-        <li className="hover:text-white cursor-pointer">Allotments</li>
-        <li className="hover:text-white cursor-pointer">Contact Us</li>
-      </ul>
-    </nav>
   );
 }
 
